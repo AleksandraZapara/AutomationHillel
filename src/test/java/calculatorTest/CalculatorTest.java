@@ -69,6 +69,7 @@ public class CalculatorTest {
     }
 
     @ParameterizedTest
+    @DisplayName("Test to verify subtraction with one parameter")
     @ValueSource(ints = {5, 3, 7})
     public void testSubtractionWithOneParameter(int a) {
         int result = calculator.subtraction(a, 4);
